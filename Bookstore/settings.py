@@ -46,7 +46,12 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'ORDERING_PARAM': 'sort',
-    'SEARCH_PARAM': 'search'
+    'SEARCH_PARAM': 'search',
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Django Rest Framework Book Store '
 }
 
 
