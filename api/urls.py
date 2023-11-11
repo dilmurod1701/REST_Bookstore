@@ -14,5 +14,6 @@ urlpatterns = [
     path('<int:id>/delete', views.DeleteBook.as_view(), name='delete'),
     path('<int:id>/update', views.UpdateBook.as_view(), name='update'),
     path('<str:username>', views.ReturnBookByOwner.as_view(), name='return_book_by_owns'),
+    path('openapi', get_schema_view(title="openapi", description="API for all things …", version="3.0.0"), name='openapi-schema'),
     path('swagger-ui/', TemplateView.as_view(template_name='api/swagger-ui.html', extra_context={'schema_url': 'openapi-schema'}), name='swagger-ui'),
 ]
