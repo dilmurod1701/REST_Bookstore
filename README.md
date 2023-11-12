@@ -14,7 +14,7 @@
 8. only GET request http://127.0.0.1:8000/api/sort/?sort=<field> - sorts Books by the given <filed>
 9. only POST request http://127.0.0.1:8000/api/signup - View to sign up
 10. only POST request http://127.0.0.1:8000/api/login - Endpoint for login
-11. only POST request http://127.0.0.1:8000/api/reset - Endpoint to reset the password for those who have forgotten it
+11. only POST request http://127.0.0.1:8000/api/password/reset/ - Endpoint to reset the password for those who have forgotten it
 12. only GET request http://127.0.0.1:8000/api/subscribe - To subscribe to a blog post
 13. only GET request http://127.0.0.1:8000/api/search/?search=<title> - search Books by the given title
 14. only GET request http://127.0.0.1:8000/api/schema/swagger - Show schemes
