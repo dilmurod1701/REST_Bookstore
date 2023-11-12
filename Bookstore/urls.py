@@ -27,4 +27,8 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/schema/swagger/', SpectacularSwaggerView.as_view(url_name='schema')),
+    path('api/password-reset/', PasswordResetView.as_view(), name='password_reset'),
+    path('api/password-reset-confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+    path('api/password-reset-done/', PasswordResetDoneView.as_view(), name='password_reset_done'),
+    path('api/password-reset-complete/', PasswordResetCompleteView.as_view(), name='password_reset_complete'),
 ]
