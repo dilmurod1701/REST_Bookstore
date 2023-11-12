@@ -7,7 +7,7 @@
 1. only GET request http://127.0.0.1:8000/api - Returns all available Books
 2. only GET request http://127.0.0.1:8000/api/all - Returns all Books
 3. only POST request http://127.0.0.1:8000/api/new - Endpoint for adding a new Book. (automatically added on behalf of the person who is logged in
-4. only GET request http://127.0.0.1:8000/api/<id> - Show Book with <id> (detail view)
+4. only GET request http://127.0.0.1:8000/api/id - Show Book with <id> (detail view)
 5. only DELETE request http://127.0.0.1:8000/api/<id>/delete - Deletes the Book with <id>
 6. only PUT/PATCH request http://127.0.0.1:8000/api/<id>/update - Updates the information of the Book with <id>
 7. only GET request http://127.0.0.1:8000/api/<username> - Returns all Books of user <username>
